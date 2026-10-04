@@ -1,0 +1,134 @@
+body {
+    background: #111;
+    color: #eee; 
+    font-family: palatino;
+    font-size: 18px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0px,
+        rgba(0,0,0,0) 1px,
+        rgba(10,10,40,0.35) 2px
+    );
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.75)100%);
+}
+
+html::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 18%;
+    top: -20%;
+    pointer-events: none;
+    z-index: 9996;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.05), transparent);
+    animation: roll 7s linear infinite;
+}
+
+@keyframes roll {
+    to { top: 120%; }
+}
+
+#chat {
+    flex: 1;
+    overflow-y: auto;
+    border: 2px solid #a00;
+    background-color: #111;
+    padding: 1rem;
+}
+
+#box {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: #eee;
+    font-size: 1rem;
+    padding: 0.5 rem 0.5 rem 
+}
+
+#inputbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: #222;
+    border: 2px solid #a00;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    color: #f55;
+    white-space: pre;
+}
+.banner-image {
+    font-size: 0.2vw;
+    letter-spacing: 0px;
+    line-height: 1.05;
+    transform: translateY(22%) translateX(-5.5%);
+   
+}
+.banner-title {
+    font-size: 1.4vw;
+    line-height: 1;
+    white-space: pre;
+    transform: translateX(-2%);
+}
+.you {
+    color: #aaa;
+}
+
+.kurisu {
+    color: #f55;
+}
+input {
+    width: 80%;
+    background: #222;
+    color: #eee;
+    border: 1px solid #a00;
+    
+}
+button {
+    padding: rem;
+    background: #a00;
+    color: #fff;
+    border: none;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#send svg {
+    transform: translateX(-7.5%);
+}
