@@ -85,7 +85,7 @@ html::after {
     gap: 0rem;
     color: #f55;
     white-space: pre;
-    transform: translateY(-10%)
+    transform: translateY(-30%)
 }
 .banner-image {
     font-size: 0.2vw;
