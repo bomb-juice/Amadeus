@@ -65,6 +65,8 @@ html::after {
     border: 2px solid #a00;
     background-color: #111;
     padding: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #272525 #111;
 }
 
 #box {
@@ -111,11 +113,13 @@ html::after {
 .you {
     color: #aaa;
     text-shadow: 0 0 3px rgb(232, 232, 232);
+    text-align: right;
 }
 
 .kurisu {
     color: #f92836;
     text-shadow: 0 0 3px #f92836, 0 0 14px #b60c00;
+    text-align: left;
 }
 input {
     background: #222;
