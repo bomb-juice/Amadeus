@@ -1,7 +1,7 @@
-# Amadeus AI (STILL WORK IN PROGRESS)
+# Amadeus UI
 ![UI demo](https://github.com/user-attachments/assets/eb103ca9-d036-4a1b-829c-8cada6a4f050)
 
-A web app chatbot based on Amadeus from Steins;Gate 0. Currently, the UI has been finished, but AI functionality is still in development.
+A web app chatbot UI based on Amadeus from Steins;Gate 0.
 
 ## 📁 File Structure
 * 'index.html' - main webpage and UI layout
